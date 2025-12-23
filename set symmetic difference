@@ -1,0 +1,16 @@
+
+# Number of students subscribed to English newspaper
+n_english = int(input())
+# Roll numbers of students subscribed to English newspaper
+english_subscribers = set(map(int, input().split()))
+
+# Number of students subscribed to French newspaper
+n_french = int(input())
+# Roll numbers of students subscribed to French newspaper
+french_subscribers = set(map(int, input().split()))
+
+# Symmetric difference: students subscribed to only one newspaper
+only_one_subscription = english_subscribers.symmetric_difference(french_subscribers)
+
+# Output the count
+print(len(only_one_subscription))
