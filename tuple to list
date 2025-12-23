@@ -1,0 +1,4 @@
+def add_to_tuple(tup, element):
+    temp_list = list(tup)     # convert tuple to list
+    temp_list.append(element) # add element
+    return tuple(temp_list)   # convert back to tuple
